@@ -36,15 +36,7 @@ def start_server(host='10.10.202.174', port=12345, save_directory='received_imag
                 
                 if image_data:
                     # Save the received image data
-                    if image_data.endswith(".jpg"):
-                        image_filename = os.path.join(save_directory, f"image_{image_count}.jpg")
-                    elif image_data.endswith(".avi"):
-                        image_filename = os.path.join(save_directory, f"image_{image_count}.avi")
-                    elif image_data.endswith(".wav"):
-                        image_filename = os.path.join(save_directory, f"image_{image_count}.wav")
-                    else:
-                        image_filename = os.path.join(save_directory, f"image_{image_count}.xml")
-                    
+                    image_filename = os.path.join(save_directory, f"image_{image_count}.jpg")
                     with open(image_filename, 'wb') as image_file:
                         image_file.write(image_data)
                     
