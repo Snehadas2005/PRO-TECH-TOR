@@ -24,8 +24,10 @@ class LocationApp(App):
         if location:
             self.lat_label.text = f"Latitude: {location[0]}"
             self.long_label.text = f"Longitude: {location[1]}"
-            print("Latitude: ",location[0])
-            print("Longitude: ",location[1])
+            Lat_itude=location[0]
+            Long_itude=location[1]
+            print("Lattitude: ",Lat_itude)
+            print("Longitude: ",Long_itude)
         else:
             self.lat_label.text = "Unable to fetch location"
             self.long_label.text = ""
