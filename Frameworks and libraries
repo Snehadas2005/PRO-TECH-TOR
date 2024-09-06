@@ -1,0 +1,10 @@
+flet
+os
+socket
+json
+geocoder
+sounddevice
+numpy
+scipy.io.wavfile
+opencv
+kivy
