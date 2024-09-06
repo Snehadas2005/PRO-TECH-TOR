@@ -32,17 +32,17 @@ def main(page: ft.Page):
 
     profile_icon = ft.Column([
         ft.IconButton(icon=ft.icons.PERSON, on_click=show_profile_page),
-        ft.Text("John Doe", size=12)  # Add name under profile icon
+        ft.Text("Profile", size=12)  
     ], alignment=ft.MainAxisAlignment.CENTER)
 
     contacts_icon = ft.Column([
         ft.IconButton(icon=ft.icons.CONTACTS, on_click=show_contacts_page),
-        ft.Text("John Doe's Contacts", size=12)  # Add name under contacts icon
+        ft.Text("Close contacts", size=12)  
     ], alignment=ft.MainAxisAlignment.CENTER)
 
     data_icon = ft.Column([
         ft.IconButton(icon=ft.icons.STORAGE, on_click=show_data_page),
-        ft.Text("John Doe's Data Storage", size=12)  # Add name under data storage icon
+        ft.Text("Strorage", size=12)  
     ], alignment=ft.MainAxisAlignment.CENTER)
 
     show_main_page()
